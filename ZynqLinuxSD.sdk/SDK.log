@@ -1,0 +1,6 @@
+22:07:22 INFO  : Registering command handlers for SDK TCF services
+22:07:23 INFO  : Launching XSCT server: xsct.bat -interactive E:\ZYNQ\ZynqLinuxSD\ZynqLinuxSD\ZynqLinuxSD.sdk\temp_xsdb_launch_script.tcl
+22:07:27 INFO  : XSCT server has started successfully.
+22:07:27 INFO  : Successfully done setting XSCT server connection channel  
+22:07:27 INFO  : Successfully done setting SDK workspace  
+22:07:27 INFO  : Processing command line option -hwspec E:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.sdk/ZynqLinuxSD_wrapper.hdf.
