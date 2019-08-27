@@ -33,6 +33,6 @@ set_property PACKAGE_PIN W14 [get_ports {GPIO_0_0_tri_io[1]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {IIC_0_0_scl_io}]
 set_property IOSTANDARD LVCMOS33 [get_ports {IIC_0_0_sda_io}]
 set_property PACKAGE_PIN M19 [get_ports {IIC_0_0_scl_io}]
-set_property PACKAGE_PIN P18 [get_ports {IIC_0_0_sda_io}]
+set_property PACKAGE_PIN M17 [get_ports {IIC_0_0_sda_io}]
  
  

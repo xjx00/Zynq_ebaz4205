@@ -18,9 +18,9 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 1744 
+INFO: Helper process launched with PID 2284 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 693.844 ; gain = 177.219
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 693.004 ; gain = 177.914
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'ZynqLinuxSD_wrapper' [E:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.srcs/sources_1/bd/ZynqLinuxSD/hdl/ZynqLinuxSD_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'IOBUF' [E:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:36115]
@@ -30,8 +30,8 @@ INFO: [Synth 8-6157] synthesizing module 'IOBUF' [E:/Xilinx/Vivado/2019.1/script
 	Parameter SLEW bound to: SLOW - type: string 
 INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (1#1) [E:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:36115]
 INFO: [Synth 8-6157] synthesizing module 'ZynqLinuxSD' [E:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.srcs/sources_1/bd/ZynqLinuxSD/synth/ZynqLinuxSD.v:13]
-INFO: [Synth 8-6157] synthesizing module 'ZynqLinuxSD_processing_system7_0_0' [E:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.runs/synth_1/.Xil/Vivado-14036-DESKTOP-EFSTGC4/realtime/ZynqLinuxSD_processing_system7_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ZynqLinuxSD_processing_system7_0_0' (2#1) [E:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.runs/synth_1/.Xil/Vivado-14036-DESKTOP-EFSTGC4/realtime/ZynqLinuxSD_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ZynqLinuxSD_processing_system7_0_0' [E:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.runs/synth_1/.Xil/Vivado-22604-DESKTOP-EFSTGC4/realtime/ZynqLinuxSD_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ZynqLinuxSD_processing_system7_0_0' (2#1) [E:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.runs/synth_1/.Xil/Vivado-22604-DESKTOP-EFSTGC4/realtime/ZynqLinuxSD_processing_system7_0_0_stub.v:6]
 WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'ZynqLinuxSD_processing_system7_0_0' has 85 connections declared, but only 57 given [E:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.srcs/sources_1/bd/ZynqLinuxSD/synth/ZynqLinuxSD.v:158]
 INFO: [Synth 8-6157] synthesizing module 'ZynqLinuxSD_xlconcat_0_0' [e:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.srcs/sources_1/bd/ZynqLinuxSD/ip/ZynqLinuxSD_xlconcat_0_0/synth/ZynqLinuxSD_xlconcat_0_0.v:58]
 INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_3_xlconcat' [e:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.srcs/sources_1/bd/ZynqLinuxSD/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
@@ -173,7 +173,7 @@ WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In2
 WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In30[0]
 WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In31[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 758.801 ; gain = 242.176
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 757.699 ; gain = 242.609
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -186,10 +186,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 758.801 ; gain = 242.176
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 757.699 ; gain = 242.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 758.801 ; gain = 242.176
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 757.699 ; gain = 242.609
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -209,21 +209,21 @@ Parsing XDC File [E:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.runs/synth_1/dont_
 Finished Parsing XDC File [E:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 830.598 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 830.953 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 5 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 5 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 830.598 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.081 . Memory (MB): peak = 830.953 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 830.598 ; gain = 313.973
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:20 . Memory (MB): peak = 830.953 ; gain = 315.863
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 830.598 ; gain = 313.973
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:20 . Memory (MB): peak = 830.953 ; gain = 315.863
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -493,10 +493,10 @@ Applied set_property DONT_TOUCH = true for ZynqLinuxSD_i/processing_system7_0. (
 Applied set_property DONT_TOUCH = true for ZynqLinuxSD_i/xlconcat_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for ZynqLinuxSD_i/xlconcat_1. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 830.598 ; gain = 313.973
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 830.953 ; gain = 315.863
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 830.598 ; gain = 313.973
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 830.953 ; gain = 315.863
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -532,7 +532,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 830.598 ; gain = 313.973
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:22 . Memory (MB): peak = 830.953 ; gain = 315.863
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -546,13 +546,13 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'ZynqLinuxSD_i/processing_system7_0/FCLK_CLK0' to pin 'ZynqLinuxSD_i/processing_system7_0/bbstub_FCLK_CLK0/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 845.711 ; gain = 329.086
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:33 . Memory (MB): peak = 845.977 ; gain = 330.887
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 845.785 ; gain = 329.160
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:33 . Memory (MB): peak = 845.977 ; gain = 330.887
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -564,7 +564,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 855.820 ; gain = 339.195
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:33 . Memory (MB): peak = 856.273 ; gain = 341.184
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -588,7 +588,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 869.637 ; gain = 353.012
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 870.098 ; gain = 355.008
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -601,7 +601,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 869.637 ; gain = 353.012
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 870.098 ; gain = 355.008
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -613,25 +613,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 869.637 ; gain = 353.012
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 870.098 ; gain = 355.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 869.637 ; gain = 353.012
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 870.098 ; gain = 355.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 869.637 ; gain = 353.012
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 870.098 ; gain = 355.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 869.637 ; gain = 353.012
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 870.098 ; gain = 355.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -664,17 +664,17 @@ Report Instance Areas:
 |4     |    xlconcat_1  |ZynqLinuxSD_xlconcat_1_0 |     0|
 +------+----------------+-------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 869.637 ; gain = 353.012
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 870.098 ; gain = 355.008
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 869.637 ; gain = 281.215
-Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 869.637 ; gain = 353.012
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 870.098 ; gain = 281.754
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:36 . Memory (MB): peak = 870.098 ; gain = 355.008
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 889.207 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 889.551 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 5 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 5 instances
@@ -682,10 +682,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 35 Infos, 64 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 889.207 ; gain = 597.328
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 889.207 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:46 . Memory (MB): peak = 889.551 ; gain = 598.414
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 889.551 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'E:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.runs/synth_1/ZynqLinuxSD_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file ZynqLinuxSD_wrapper_utilization_synth.rpt -pb ZynqLinuxSD_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Aug 27 12:31:34 2019...
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 27 22:27:11 2019...

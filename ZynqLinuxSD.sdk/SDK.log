@@ -21,3 +21,20 @@
 12:37:09 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
 12:37:11 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
 12:37:13 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+22:33:06 INFO  : Launching XSCT server: xsct.bat -interactive E:\ZYNQ\ZynqLinuxSD\ZynqLinuxSD\ZynqLinuxSD.sdk\temp_xsdb_launch_script.tcl
+22:33:11 INFO  : XSCT server has started successfully.
+22:33:11 INFO  : Successfully done setting XSCT server connection channel  
+22:33:26 INFO  : Successfully done setting SDK workspace  
+22:33:41 INFO  : Registering command handlers for SDK TCF services
+22:33:41 INFO  : Processing command line option -hwspec E:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.sdk/ZynqLinuxSD_wrapper.hdf.
+22:33:42 INFO  : Checking for hwspec changes in the project ZynqLinuxSD_wrapper_hw_platform_0.
+22:33:42 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1566916136659,  Project:1566880437253
+22:33:42 INFO  : The hardware specification for project 'ZynqLinuxSD_wrapper_hw_platform_0' is different from E:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.sdk/ZynqLinuxSD_wrapper.hdf.
+22:33:43 INFO  : Copied contents of E:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.sdk/ZynqLinuxSD_wrapper.hdf into \ZynqLinuxSD_wrapper_hw_platform_0\system.hdf.
+22:33:57 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+22:34:10 INFO  : 
+22:34:11 INFO  : Updating hardware inferred compiler options for fsbl.
+22:34:11 INFO  : Clearing existing target manager status.
+22:34:11 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+22:34:12 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+22:34:15 WARN  : Linker script will not be updated automatically. Users need to update it manually.
