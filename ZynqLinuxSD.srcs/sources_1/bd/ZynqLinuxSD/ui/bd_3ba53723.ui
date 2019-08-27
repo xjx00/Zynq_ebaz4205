@@ -2,32 +2,36 @@
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS
 #  -string -flagsOSRD
-preplace port DDR -pg 1 -lvl 4 -x 780 -y 350 -defaultsOSRD
-preplace port FIXED_IO -pg 1 -lvl 4 -x 780 -y 370 -defaultsOSRD
-preplace port MDIO_ETHERNET_0_0 -pg 1 -lvl 4 -x 780 -y 270 -defaultsOSRD
+preplace port DDR -pg 1 -lvl 4 -x 770 -y 350 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 4 -x 770 -y 370 -defaultsOSRD
+preplace port MDIO_ETHERNET_0_0 -pg 1 -lvl 4 -x 770 -y 290 -defaultsOSRD
+preplace port GPIO_0_0 -pg 1 -lvl 4 -x 770 -y 270 -defaultsOSRD
+preplace port IIC_0_0 -pg 1 -lvl 4 -x 770 -y 330 -defaultsOSRD
 preplace port ENET0_GMII_RX_CLK_0 -pg 1 -lvl 0 -x -340 -y 260 -defaultsOSRD
 preplace port ENET0_GMII_RX_DV_0 -pg 1 -lvl 0 -x -340 -y 280 -defaultsOSRD
 preplace port ENET0_GMII_TX_CLK_0 -pg 1 -lvl 0 -x -340 -y 320 -defaultsOSRD
-preplace portBus ENET0_GMII_TX_EN_0 -pg 1 -lvl 4 -x 780 -y 160 -defaultsOSRD
-preplace portBus eth0_txd -pg 1 -lvl 4 -x 780 -y 230 -defaultsOSRD
+preplace portBus ENET0_GMII_TX_EN_0 -pg 1 -lvl 4 -x 770 -y 160 -defaultsOSRD
+preplace portBus eth0_txd -pg 1 -lvl 4 -x 770 -y 230 -defaultsOSRD
 preplace portBus eth0_rxd -pg 1 -lvl 0 -x -340 -y 430 -defaultsOSRD
 preplace inst processing_system7_0 -pg 1 -lvl 1 -x -50 -y 240 -defaultsOSRD
-preplace inst xlconcat_0 -pg 1 -lvl 2 -x 330 -y 230 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 2 -x 350 -y 230 -defaultsOSRD
 preplace inst xlconcat_1 -pg 1 -lvl 3 -x 650 -y 440 -defaultsOSRD
-preplace netloc processing_system7_0_ENET0_GMII_TXD 1 1 1 240 170n
-preplace netloc xlconcat_1_dout 1 1 3 230 320 N 320 740
-preplace netloc processing_system7_0_ENET0_GMII_TX_EN 1 1 3 190J 160 NJ 160 NJ
+preplace netloc processing_system7_0_ENET0_GMII_TXD 1 1 1 240 150n
+preplace netloc xlconcat_1_dout 1 1 3 230 360 N 360 740
+preplace netloc processing_system7_0_ENET0_GMII_TX_EN 1 1 3 250J 160 NJ 160 NJ
 preplace netloc xlconcat_0_dout 1 2 2 NJ 230 NJ
-preplace netloc ENET0_GMII_RX_CLK_0_1 1 0 2 -290J 410 210
-preplace netloc ENET0_GMII_RX_DV_0_1 1 0 2 -300J 420 200
-preplace netloc ENET0_GMII_TX_CLK_0_1 1 0 2 -310J 430 190
-preplace netloc In0_0_1 1 0 3 -320J 450 230J 430 NJ
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 2 -280 440 180
-preplace netloc processing_system7_0_DDR 1 1 3 220J 300 NJ 300 760J
+preplace netloc ENET0_GMII_RX_CLK_0_1 1 0 2 -290J 430 210
+preplace netloc ENET0_GMII_RX_DV_0_1 1 0 2 -300J 440 200
+preplace netloc ENET0_GMII_TX_CLK_0_1 1 0 2 -310J 450 190
+preplace netloc In0_0_1 1 0 3 -320J 460 NJ 460 440J
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 2 -280 470 180
+preplace netloc processing_system7_0_MDIO_ETHERNET_0 1 1 3 250J 300 450J 290 NJ
 preplace netloc processing_system7_0_FIXED_IO 1 1 3 NJ 310 NJ 310 750J
-preplace netloc processing_system7_0_MDIO_ETHERNET_0 1 1 3 240J 290 420J 270 NJ
-levelinfo -pg 1 -340 -50 330 650 780
-pagesize -pg 1 -db -bbox -sgen -560 -170 1020 600
+preplace netloc processing_system7_0_DDR 1 1 3 220J 350 NJ 350 NJ
+preplace netloc processing_system7_0_IIC_0 1 1 3 NJ 330 NJ 330 NJ
+preplace netloc processing_system7_0_GPIO_0 1 1 3 240J 290 440J 270 NJ
+levelinfo -pg 1 -340 -50 350 650 770
+pagesize -pg 1 -db -bbox -sgen -560 -170 1010 600
 "
 }
 {

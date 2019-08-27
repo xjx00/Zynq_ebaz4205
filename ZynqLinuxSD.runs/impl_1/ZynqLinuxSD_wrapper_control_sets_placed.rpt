@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Sun Aug 25 21:52:20 2019
+| Date         : Tue Aug 27 12:32:28 2019
 | Host         : DESKTOP-EFSTGC4 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file ZynqLinuxSD_wrapper_control_sets_placed.rpt
 | Design       : ZynqLinuxSD_wrapper
@@ -73,8 +73,8 @@ Table of Contents
 +---------------------------+---------------+------------------+------------------+----------------+
 |        Clock Signal       | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count |
 +---------------------------+---------------+------------------+------------------+----------------+
-|  ENET0_GMII_RX_CLK_0_IBUF |               |                  |                3 |              5 |
 |  ENET0_GMII_TX_CLK_0_IBUF |               |                  |                2 |              5 |
+|  ENET0_GMII_RX_CLK_0_IBUF |               |                  |                3 |              5 |
 +---------------------------+---------------+------------------+------------------+----------------+
 
 

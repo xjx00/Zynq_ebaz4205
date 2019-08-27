@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Sun Aug 25 21:52:47 2019
+| Date         : Tue Aug 27 12:32:50 2019
 | Host         : DESKTOP-EFSTGC4 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file ZynqLinuxSD_wrapper_methodology_drc_routed.rpt -pb ZynqLinuxSD_wrapper_methodology_drc_routed.pb -rpx ZynqLinuxSD_wrapper_methodology_drc_routed.rpx
 | Design       : ZynqLinuxSD_wrapper

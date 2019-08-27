@@ -17,7 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param xicom.use_bs_reader 1
+set_param chipscope.maxJobs 1
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
 create_project -in_memory -part xc7z010clg400-1
@@ -32,7 +32,7 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_output_repo e:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_ip -quiet e:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.srcs/sources_1/bd/ZynqLinuxSD/ip/ZynqLinuxSD_processing_system7_0_0/ZynqLinuxSD_processing_system7_0_0.xci
+read_ip -quiet E:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.srcs/sources_1/bd/ZynqLinuxSD/ip/ZynqLinuxSD_processing_system7_0_0/ZynqLinuxSD_processing_system7_0_0.xci
 set_property used_in_implementation false [get_files -all e:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.srcs/sources_1/bd/ZynqLinuxSD/ip/ZynqLinuxSD_processing_system7_0_0/ZynqLinuxSD_processing_system7_0_0.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -88,32 +88,32 @@ write_checkpoint -force -noxdef ZynqLinuxSD_processing_system7_0_0.dcp
 create_report "ZynqLinuxSD_processing_system7_0_0_synth_1_synth_report_utilization_0" "report_utilization -file ZynqLinuxSD_processing_system7_0_0_utilization_synth.rpt -pb ZynqLinuxSD_processing_system7_0_0_utilization_synth.pb"
 
 if { [catch {
-  file copy -force E:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.runs/ZynqLinuxSD_processing_system7_0_0_synth_1/ZynqLinuxSD_processing_system7_0_0.dcp e:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.srcs/sources_1/bd/ZynqLinuxSD/ip/ZynqLinuxSD_processing_system7_0_0/ZynqLinuxSD_processing_system7_0_0.dcp
+  file copy -force E:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.runs/ZynqLinuxSD_processing_system7_0_0_synth_1/ZynqLinuxSD_processing_system7_0_0.dcp E:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.srcs/sources_1/bd/ZynqLinuxSD/ip/ZynqLinuxSD_processing_system7_0_0/ZynqLinuxSD_processing_system7_0_0.dcp
 } _RESULT ] } { 
   send_msg_id runtcl-3 error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
 }
 
 if { [catch {
-  write_verilog -force -mode synth_stub e:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.srcs/sources_1/bd/ZynqLinuxSD/ip/ZynqLinuxSD_processing_system7_0_0/ZynqLinuxSD_processing_system7_0_0_stub.v
+  write_verilog -force -mode synth_stub E:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.srcs/sources_1/bd/ZynqLinuxSD/ip/ZynqLinuxSD_processing_system7_0_0/ZynqLinuxSD_processing_system7_0_0_stub.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_vhdl -force -mode synth_stub e:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.srcs/sources_1/bd/ZynqLinuxSD/ip/ZynqLinuxSD_processing_system7_0_0/ZynqLinuxSD_processing_system7_0_0_stub.vhdl
+  write_vhdl -force -mode synth_stub E:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.srcs/sources_1/bd/ZynqLinuxSD/ip/ZynqLinuxSD_processing_system7_0_0/ZynqLinuxSD_processing_system7_0_0_stub.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_verilog -force -mode funcsim e:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.srcs/sources_1/bd/ZynqLinuxSD/ip/ZynqLinuxSD_processing_system7_0_0/ZynqLinuxSD_processing_system7_0_0_sim_netlist.v
+  write_verilog -force -mode funcsim E:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.srcs/sources_1/bd/ZynqLinuxSD/ip/ZynqLinuxSD_processing_system7_0_0/ZynqLinuxSD_processing_system7_0_0_sim_netlist.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_vhdl -force -mode funcsim e:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.srcs/sources_1/bd/ZynqLinuxSD/ip/ZynqLinuxSD_processing_system7_0_0/ZynqLinuxSD_processing_system7_0_0_sim_netlist.vhdl
+  write_vhdl -force -mode funcsim E:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.srcs/sources_1/bd/ZynqLinuxSD/ip/ZynqLinuxSD_processing_system7_0_0/ZynqLinuxSD_processing_system7_0_0_sim_netlist.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
@@ -123,32 +123,32 @@ if { [catch {
 
 
 if { [catch {
-  file copy -force E:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.runs/ZynqLinuxSD_processing_system7_0_0_synth_1/ZynqLinuxSD_processing_system7_0_0.dcp e:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.srcs/sources_1/bd/ZynqLinuxSD/ip/ZynqLinuxSD_processing_system7_0_0/ZynqLinuxSD_processing_system7_0_0.dcp
+  file copy -force E:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.runs/ZynqLinuxSD_processing_system7_0_0_synth_1/ZynqLinuxSD_processing_system7_0_0.dcp E:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.srcs/sources_1/bd/ZynqLinuxSD/ip/ZynqLinuxSD_processing_system7_0_0/ZynqLinuxSD_processing_system7_0_0.dcp
 } _RESULT ] } { 
   send_msg_id runtcl-3 error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
 }
 
 if { [catch {
-  file rename -force E:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.runs/ZynqLinuxSD_processing_system7_0_0_synth_1/ZynqLinuxSD_processing_system7_0_0_stub.v e:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.srcs/sources_1/bd/ZynqLinuxSD/ip/ZynqLinuxSD_processing_system7_0_0/ZynqLinuxSD_processing_system7_0_0_stub.v
+  file rename -force E:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.runs/ZynqLinuxSD_processing_system7_0_0_synth_1/ZynqLinuxSD_processing_system7_0_0_stub.v E:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.srcs/sources_1/bd/ZynqLinuxSD/ip/ZynqLinuxSD_processing_system7_0_0/ZynqLinuxSD_processing_system7_0_0_stub.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force E:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.runs/ZynqLinuxSD_processing_system7_0_0_synth_1/ZynqLinuxSD_processing_system7_0_0_stub.vhdl e:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.srcs/sources_1/bd/ZynqLinuxSD/ip/ZynqLinuxSD_processing_system7_0_0/ZynqLinuxSD_processing_system7_0_0_stub.vhdl
+  file rename -force E:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.runs/ZynqLinuxSD_processing_system7_0_0_synth_1/ZynqLinuxSD_processing_system7_0_0_stub.vhdl E:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.srcs/sources_1/bd/ZynqLinuxSD/ip/ZynqLinuxSD_processing_system7_0_0/ZynqLinuxSD_processing_system7_0_0_stub.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force E:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.runs/ZynqLinuxSD_processing_system7_0_0_synth_1/ZynqLinuxSD_processing_system7_0_0_sim_netlist.v e:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.srcs/sources_1/bd/ZynqLinuxSD/ip/ZynqLinuxSD_processing_system7_0_0/ZynqLinuxSD_processing_system7_0_0_sim_netlist.v
+  file rename -force E:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.runs/ZynqLinuxSD_processing_system7_0_0_synth_1/ZynqLinuxSD_processing_system7_0_0_sim_netlist.v E:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.srcs/sources_1/bd/ZynqLinuxSD/ip/ZynqLinuxSD_processing_system7_0_0/ZynqLinuxSD_processing_system7_0_0_sim_netlist.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force E:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.runs/ZynqLinuxSD_processing_system7_0_0_synth_1/ZynqLinuxSD_processing_system7_0_0_sim_netlist.vhdl e:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.srcs/sources_1/bd/ZynqLinuxSD/ip/ZynqLinuxSD_processing_system7_0_0/ZynqLinuxSD_processing_system7_0_0_sim_netlist.vhdl
+  file rename -force E:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.runs/ZynqLinuxSD_processing_system7_0_0_synth_1/ZynqLinuxSD_processing_system7_0_0_sim_netlist.vhdl E:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.srcs/sources_1/bd/ZynqLinuxSD/ip/ZynqLinuxSD_processing_system7_0_0/ZynqLinuxSD_processing_system7_0_0_sim_netlist.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
@@ -157,13 +157,13 @@ if { [catch {
 
 if {[file isdir E:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.ip_user_files/ip/ZynqLinuxSD_processing_system7_0_0]} {
   catch { 
-    file copy -force e:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.srcs/sources_1/bd/ZynqLinuxSD/ip/ZynqLinuxSD_processing_system7_0_0/ZynqLinuxSD_processing_system7_0_0_stub.v E:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.ip_user_files/ip/ZynqLinuxSD_processing_system7_0_0
+    file copy -force E:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.srcs/sources_1/bd/ZynqLinuxSD/ip/ZynqLinuxSD_processing_system7_0_0/ZynqLinuxSD_processing_system7_0_0_stub.v E:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.ip_user_files/ip/ZynqLinuxSD_processing_system7_0_0
   }
 }
 
 if {[file isdir E:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.ip_user_files/ip/ZynqLinuxSD_processing_system7_0_0]} {
   catch { 
-    file copy -force e:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.srcs/sources_1/bd/ZynqLinuxSD/ip/ZynqLinuxSD_processing_system7_0_0/ZynqLinuxSD_processing_system7_0_0_stub.vhdl E:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.ip_user_files/ip/ZynqLinuxSD_processing_system7_0_0
+    file copy -force E:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.srcs/sources_1/bd/ZynqLinuxSD/ip/ZynqLinuxSD_processing_system7_0_0/ZynqLinuxSD_processing_system7_0_0_stub.vhdl E:/ZYNQ/ZynqLinuxSD/ZynqLinuxSD/ZynqLinuxSD.ip_user_files/ip/ZynqLinuxSD_processing_system7_0_0
   }
 }
 file delete __synthesis_is_running__

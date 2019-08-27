@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-//Date        : Sun Aug 25 21:29:36 2019
+//Date        : Tue Aug 27 12:28:46 2019
 //Host        : DESKTOP-EFSTGC4 running 64-bit major release  (build 9200)
 //Command     : generate_target ZynqLinuxSD_wrapper.bd
 //Design      : ZynqLinuxSD_wrapper
@@ -35,6 +35,9 @@ module ZynqLinuxSD_wrapper
     FIXED_IO_ps_clk,
     FIXED_IO_ps_porb,
     FIXED_IO_ps_srstb,
+    GPIO_0_0_tri_io,
+    IIC_0_0_scl_io,
+    IIC_0_0_sda_io,
     MDIO_ETHERNET_0_0_mdc,
     MDIO_ETHERNET_0_0_mdio_io,
     eth0_rxd,
@@ -64,6 +67,9 @@ module ZynqLinuxSD_wrapper
   inout FIXED_IO_ps_clk;
   inout FIXED_IO_ps_porb;
   inout FIXED_IO_ps_srstb;
+  inout [1:0]GPIO_0_0_tri_io;
+  inout IIC_0_0_scl_io;
+  inout IIC_0_0_sda_io;
   output MDIO_ETHERNET_0_0_mdc;
   inout MDIO_ETHERNET_0_0_mdio_io;
   input [3:0]eth0_rxd;
@@ -94,6 +100,22 @@ module ZynqLinuxSD_wrapper
   wire FIXED_IO_ps_clk;
   wire FIXED_IO_ps_porb;
   wire FIXED_IO_ps_srstb;
+  wire [0:0]GPIO_0_0_tri_i_0;
+  wire [1:1]GPIO_0_0_tri_i_1;
+  wire [0:0]GPIO_0_0_tri_io_0;
+  wire [1:1]GPIO_0_0_tri_io_1;
+  wire [0:0]GPIO_0_0_tri_o_0;
+  wire [1:1]GPIO_0_0_tri_o_1;
+  wire [0:0]GPIO_0_0_tri_t_0;
+  wire [1:1]GPIO_0_0_tri_t_1;
+  wire IIC_0_0_scl_i;
+  wire IIC_0_0_scl_io;
+  wire IIC_0_0_scl_o;
+  wire IIC_0_0_scl_t;
+  wire IIC_0_0_sda_i;
+  wire IIC_0_0_sda_io;
+  wire IIC_0_0_sda_o;
+  wire IIC_0_0_sda_t;
   wire MDIO_ETHERNET_0_0_mdc;
   wire MDIO_ETHERNET_0_0_mdio_i;
   wire MDIO_ETHERNET_0_0_mdio_io;
@@ -102,6 +124,26 @@ module ZynqLinuxSD_wrapper
   wire [3:0]eth0_rxd;
   wire [3:0]eth0_txd;
 
+  IOBUF GPIO_0_0_tri_iobuf_0
+       (.I(GPIO_0_0_tri_o_0),
+        .IO(GPIO_0_0_tri_io[0]),
+        .O(GPIO_0_0_tri_i_0),
+        .T(GPIO_0_0_tri_t_0));
+  IOBUF GPIO_0_0_tri_iobuf_1
+       (.I(GPIO_0_0_tri_o_1),
+        .IO(GPIO_0_0_tri_io[1]),
+        .O(GPIO_0_0_tri_i_1),
+        .T(GPIO_0_0_tri_t_1));
+  IOBUF IIC_0_0_scl_iobuf
+       (.I(IIC_0_0_scl_o),
+        .IO(IIC_0_0_scl_io),
+        .O(IIC_0_0_scl_i),
+        .T(IIC_0_0_scl_t));
+  IOBUF IIC_0_0_sda_iobuf
+       (.I(IIC_0_0_sda_o),
+        .IO(IIC_0_0_sda_io),
+        .O(IIC_0_0_sda_i),
+        .T(IIC_0_0_sda_t));
   IOBUF MDIO_ETHERNET_0_0_mdio_iobuf
        (.I(MDIO_ETHERNET_0_0_mdio_o),
         .IO(MDIO_ETHERNET_0_0_mdio_io),
@@ -133,6 +175,15 @@ module ZynqLinuxSD_wrapper
         .FIXED_IO_ps_clk(FIXED_IO_ps_clk),
         .FIXED_IO_ps_porb(FIXED_IO_ps_porb),
         .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb),
+        .GPIO_0_0_tri_i({GPIO_0_0_tri_i_1,GPIO_0_0_tri_i_0}),
+        .GPIO_0_0_tri_o({GPIO_0_0_tri_o_1,GPIO_0_0_tri_o_0}),
+        .GPIO_0_0_tri_t({GPIO_0_0_tri_t_1,GPIO_0_0_tri_t_0}),
+        .IIC_0_0_scl_i(IIC_0_0_scl_i),
+        .IIC_0_0_scl_o(IIC_0_0_scl_o),
+        .IIC_0_0_scl_t(IIC_0_0_scl_t),
+        .IIC_0_0_sda_i(IIC_0_0_sda_i),
+        .IIC_0_0_sda_o(IIC_0_0_sda_o),
+        .IIC_0_0_sda_t(IIC_0_0_sda_t),
         .MDIO_ETHERNET_0_0_mdc(MDIO_ETHERNET_0_0_mdc),
         .MDIO_ETHERNET_0_0_mdio_i(MDIO_ETHERNET_0_0_mdio_i),
         .MDIO_ETHERNET_0_0_mdio_o(MDIO_ETHERNET_0_0_mdio_o),

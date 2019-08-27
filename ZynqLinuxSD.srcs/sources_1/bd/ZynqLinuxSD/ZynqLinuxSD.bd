@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x98F21601A73FC13D",
+      "boundary_crc": "0xC67AFAE1148977C3",
       "device": "xc7z010clg400-1",
       "name": "ZynqLinuxSD",
       "synth_flow_mode": "Hierarchical",
@@ -87,6 +87,14 @@
             "value_src": "default"
           }
         }
+      },
+      "GPIO_0_0": {
+        "mode": "Master",
+        "vlnv": "xilinx.com:interface:gpio_rtl:1.0"
+      },
+      "IIC_0_0": {
+        "mode": "Master",
+        "vlnv": "xilinx.com:interface:iic_rtl:1.0"
       }
     },
     "ports": {
@@ -269,7 +277,19 @@
           "PCW_EN_EMIO_ENET0": {
             "value": "1"
           },
+          "PCW_EN_EMIO_GPIO": {
+            "value": "1"
+          },
+          "PCW_EN_EMIO_I2C0": {
+            "value": "1"
+          },
           "PCW_EN_ENET0": {
+            "value": "1"
+          },
+          "PCW_EN_GPIO": {
+            "value": "0"
+          },
+          "PCW_EN_I2C0": {
             "value": "1"
           },
           "PCW_EN_RST0_PORT": {
@@ -286,6 +306,27 @@
           },
           "PCW_FPGA_FCLK0_ENABLE": {
             "value": "1"
+          },
+          "PCW_GPIO_EMIO_GPIO_ENABLE": {
+            "value": "1"
+          },
+          "PCW_GPIO_EMIO_GPIO_IO": {
+            "value": "2"
+          },
+          "PCW_GPIO_EMIO_GPIO_WIDTH": {
+            "value": "2"
+          },
+          "PCW_GPIO_MIO_GPIO_ENABLE": {
+            "value": "0"
+          },
+          "PCW_I2C0_I2C0_IO": {
+            "value": "EMIO"
+          },
+          "PCW_I2C0_PERIPHERAL_ENABLE": {
+            "value": "1"
+          },
+          "PCW_I2C_PERIPHERAL_FREQMHZ": {
+            "value": "111.111115"
           },
           "PCW_MIO_24_IOTYPE": {
             "value": "LVCMOS 3.3V"
@@ -496,6 +537,18 @@
         "interface_ports": [
           "DDR",
           "processing_system7_0/DDR"
+        ]
+      },
+      "processing_system7_0_IIC_0": {
+        "interface_ports": [
+          "IIC_0_0",
+          "processing_system7_0/IIC_0"
+        ]
+      },
+      "processing_system7_0_GPIO_0": {
+        "interface_ports": [
+          "GPIO_0_0",
+          "processing_system7_0/GPIO_0"
         ]
       }
     },

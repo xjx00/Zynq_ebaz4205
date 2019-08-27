@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date             : Sun Aug 25 21:52:48 2019
+| Date             : Tue Aug 27 12:32:50 2019
 | Host             : DESKTOP-EFSTGC4 running 64-bit major release  (build 9200)
 | Command          : report_power -file ZynqLinuxSD_wrapper_power_routed.rpt -pb ZynqLinuxSD_wrapper_power_summary_routed.pb -rpx ZynqLinuxSD_wrapper_power_routed.rpx
 | Design           : ZynqLinuxSD_wrapper
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.392        |
+| Total On-Chip Power (W)  | 1.394        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.277        |
+| Dynamic (W)              | 1.279        |
 | Device Static (W)        | 0.115        |
 | Effective TJA (C/W)      | 11.5         |
 | Max Ambient (C)          | 68.9         |
@@ -53,15 +53,15 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      147 |       --- |             --- |
+| Slice Logic    |    <0.001 |      151 |       --- |             --- |
+|   LUT as Logic |    <0.001 |        5 |     17600 |            0.03 |
 |   Register     |    <0.001 |       10 |     35200 |            0.03 |
-|   LUT as Logic |    <0.001 |        1 |     17600 |           <0.01 |
 |   Others       |     0.000 |      136 |       --- |             --- |
-| Signals        |    <0.001 |       27 |       --- |             --- |
-| I/O            |     0.003 |       14 |       100 |           14.00 |
+| Signals        |    <0.001 |       43 |       --- |             --- |
+| I/O            |     0.004 |       18 |       100 |           18.00 |
 | PS7            |     1.275 |        1 |       --- |             --- |
 | Static Power   |     0.115 |          |           |                 |
-| Total          |     1.392 |          |           |                 |
+| Total          |     1.394 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -84,7 +84,7 @@ Table of Contents
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccpint   |       1.000 |     0.693 |       0.667 |      0.027 |
+| Vccpint   |       1.000 |     0.694 |       0.667 |      0.027 |
 | Vccpaux   |       1.800 |     0.036 |       0.026 |      0.010 |
 | Vccpll    |       1.800 |     0.018 |       0.015 |      0.003 |
 | Vcco_ddr  |       1.500 |     0.356 |       0.354 |      0.002 |
@@ -147,7 +147,7 @@ Table of Contents
 +--------------------------+-----------+
 | Name                     | Power (W) |
 +--------------------------+-----------+
-| ZynqLinuxSD_wrapper      |     1.277 |
+| ZynqLinuxSD_wrapper      |     1.279 |
 |   ZynqLinuxSD_i          |     1.275 |
 |     processing_system7_0 |     1.275 |
 |       inst               |     1.275 |
